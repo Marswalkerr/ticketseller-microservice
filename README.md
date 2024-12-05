@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ticketseller-microservice-practice
 A project to deep dive into microservices using nodejs with docker and kubernetes
 Important topics, Technologies and Tools Used:
@@ -36,7 +35,3 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 * Skaffold will build and run the container and deployment service from infra dircories as mentioned in skaffold.yaml file.
 * These deployment services run the pod for each services and also for event bus too.
 * After running all the pods successfully you can visit to http://ticketseller.dev to get the live demo.
-=======
-# ticketseller-microservices-project
-A practice project to deep dive into microservices using nodejs with docker and kubernetes
->>>>>>> df34e8740d7cb434cc8d2a4b8496d283353a3f2d
