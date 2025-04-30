@@ -13,9 +13,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: cd tickets && docker build -t denilgabani/tickets .
+      - run: cd tickets && docker build -t sanketsavani/tickets .
       - run: docker login -u $DOCKER_USERNAME -p $DOCKER_PWD
         env:
           DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
           DOCKER_PWD: ${{secrets.DOCKER_PWD}}
-      - run: docker push denilgabani/tickets
+      - run: docker push sanketsavani/tickets

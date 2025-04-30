@@ -10,7 +10,7 @@ build:
   local:
     push: false
   artifacts:
-    - image: denilgabani/auth
+    - image: sanketsavani/auth
       context: auth
       docker:
         dockerfile: Dockerfile
@@ -19,7 +19,7 @@ build:
           - src: "src/**/*.ts"
             dest: .
 
-    - image: denilgabani/client
+    - image: sanketsavani/client
       context: client
       docker:
         dockerfile: Dockerfile
@@ -28,7 +28,7 @@ build:
           - src: "**/*.js"
             dest: .
 
-    - image: denilgabani/tickets
+    - image: sanketsavani/tickets
       context: tickets
       docker:
         dockerfile: Dockerfile
@@ -37,7 +37,7 @@ build:
           - src: "src/**/*.ts"
             dest: .
 
-    - image: denilgabani/orders
+    - image: sanketsavani/orders
       context: orders
       docker:
         dockerfile: Dockerfile
@@ -46,7 +46,7 @@ build:
           - src: "src/**/*.ts"
             dest: .
 
-    - image: denilgabani/expiration
+    - image: sanketsavani/expiration
       context: expiration
       docker:
         dockerfile: Dockerfile
@@ -55,7 +55,7 @@ build:
           - src: "src/**/*.ts"
             dest: .
 
-    - image: denilgabani/payments
+    - image: sanketsavani/payments
       context: payments
       docker:
         dockerfile: Dockerfile

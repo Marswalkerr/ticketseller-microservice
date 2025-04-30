@@ -13,9 +13,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: cd client && docker build -t denilgabani/client .
+      - run: cd client && docker build -t sanketsavani/client .
       - run: docker login -u $DOCKER_USERNAME -p $DOCKER_PWD
         env:
           DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
           DOCKER_PWD: ${{secrets.DOCKER_PWD}}
-      - run: docker push denilgabani/client
+      - run: docker push sanketsavani/client

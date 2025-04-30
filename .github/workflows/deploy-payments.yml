@@ -13,9 +13,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: cd payments && docker build -t denilgabani/payments .
+      - run: cd payments && docker build -t sanketsavani/payments .
       - run: docker login -u $DOCKER_USERNAME -p $DOCKER_PWD
         env:
           DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
           DOCKER_PWD: ${{secrets.DOCKER_PWD}}
-      - run: docker push denilgabani/payments
+      - run: docker push sanketsavani/payments
