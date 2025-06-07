@@ -188,28 +188,6 @@ const Header = ({ currentUser }) => {
 
           {/* User menu */}
           <Box sx={{ flexGrow: 0 }}>
-            {isTestMode && (
-              <Chip
-                label="TEST MODE"
-                color="warning"
-                size="small"
-                sx={{ 
-                  mr: 2, 
-                  animation: 'pulse 2s infinite',
-                  '@keyframes pulse': {
-                    '0%': {
-                      opacity: 0.7,
-                    },
-                    '50%': {
-                      opacity: 1,
-                    },
-                    '100%': {
-                      opacity: 0.7,
-                    },
-                  },
-                }}
-              />
-            )}
             <IconButton onClick={handleOpenUserMenu} sx={{ p: 0, color: 'white' }}>
               <AccountCircleIcon />
               <Typography variant="body1" sx={{ ml: 1, display: { xs: 'none', sm: 'block' } }}>

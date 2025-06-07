@@ -35,12 +35,11 @@ const TicketShow = ({ ticket, currentUser }) => {
   const getCategoryImage = () => {
     const category = ticket.category || 'concerts';
     const categoryImages = {
-      concerts: '/concert.jpg',
-      sports: '/sports.jpg',
-      theater: '/theater.jpg',
-      conferences: '/conference.jpg',
+      concerts: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      sports: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      theater: 'https://images.unsplash.com/photo-1503095396549-807759245b35?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      conferences: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
     };
-    
     return ticket.imageUrl || categoryImages[category] || categoryImages.concerts;
   };
   
